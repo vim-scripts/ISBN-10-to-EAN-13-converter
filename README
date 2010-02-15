@@ -1,0 +1,24 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=2970
+
+Allows conversions between ISBN-10 >> 978 prefix EAN-13s, and 978 prefix EAN-13s >> ISBN-10 
+
+There are three methods of converting ISBNs and EANs: 
+
+:ReplaceLineIsbnEan 
+    If the entirety of the current line is a valid ISBN-10, replaces it with the converted 978 prefix 
+    EAN-13 
+:ReplaceLineEanIsbn 
+    If the entirety of the current line is a valid EAN-13 with a 978 prefix, replaces it with the 
+    converted ISBN-10 
+
+:ReplaceSelectedIsbnEan 
+    If the selected text is a valid ISBN-10, replaces that text with the converted 978 prefix EAN-13 
+:ReplaceSelectedEanIsbn 
+    If the selected text is a valid EAN-13 with a 978 prefix, replaces it with the converted ISBN-10 
+
+:ReplaceAllIsbnEan 
+    Searches for any 10 digit number, of 9 digit number followed by x or X. For each match, if it is 
+    a valid ISBN-10, then it replaces that match with the converted 978 prefix EAN-13 
+:ReplaceAllEanIsbn 
+    Searches for any 13 digit number. For each match, if it is a valid 978 prefix EAN-13, then it 
+    replaces that match with the converted ISBN-10.
